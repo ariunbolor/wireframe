@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>RDash AngularJS</title>
+	<title>cloudSM Dashboard</title>
   <!-- STYLES -->
   <link rel="stylesheet" href="css/main.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <!-- SCRIPTS -->
   <script src="js/main.min.js"></script>
   <!-- Custom Scripts -->
@@ -20,32 +20,44 @@
       <ul class="sidebar">
         <li class="sidebar-main">
           <a ng-click="toggleSidebar()">
-            Dashboard
+            Services
             <span class="menu-icon glyphicon glyphicon-transfer"></span>
           </a>
         </li>
-        <li class="sidebar-title"><span>NAVIGATION</span></li>
+        <!--<li class="sidebar-title"><span>NAVIGATION</span></li>-->
         <li class="sidebar-list">
-          <a href="#">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
+          <a href="#">Compute items <span class="menu-icon fa fa-server"></span></a>
         </li>
         <li class="sidebar-list">
-          <a href="#/tables">Tables <span class="menu-icon fa fa-table"></span></a>
+          <a href="#/tables">Disks <span class="menu-icon fa fa-hdd-o"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/tables">Objective storages <span class="menu-icon fa fa-table"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/tables">Databases <span class="menu-icon fa fa-database"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/tables" data-toggle="tooltip" data-placement="right" title="Tooltip on right" >Composites <span class="menu-icon fa fa-sellsy"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/tables" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Generic items <span class="menu-icon fa fa-table"></span></a>
         </li>
       </ul>
       <div class="sidebar-footer">
         <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular" target="_blank">
-            Github
-          </a>
-        </div>
-        <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular/blob/master/README.md" target="_blank">
-            About
+          <a href="#">
+            Services
           </a>
         </div>
         <div class="col-xs-4">
           <a href="#">
-            Support
+            Settings
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <a href="#">
+            Reports
           </a>
         </div>
       </div>
@@ -61,7 +73,7 @@
             <div class="user pull-right">
               <div class="item dropdown">
                 <a href="#" class="dropdown-toggle">
-                  <img src="img/avatar.jpg">
+                  <i class="fa fa-user"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li class="dropdown-header">
@@ -93,6 +105,34 @@
               </div>
               <div class="item dropdown">
                <a href="#" class="dropdown-toggle">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li class="dropdown-header">
+                    Notifications
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">Server Down!</a>
+                  </li>
+                </ul>
+              </div>
+	      <div class="item dropdown">
+               <a href="#" class="dropdown-toggle">
+                  <i class="fa fa-group"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li class="dropdown-header">
+                    Notifications
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">Server Down!</a>
+                  </li>
+                </ul>
+              </div>
+	      <div class="item dropdown">
+               <a href="#" class="dropdown-toggle">
                   <i class="fa fa-bell-o"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
@@ -105,13 +145,14 @@
                   </li>
                 </ul>
               </div>
+
             </div>
             <div class="meta">
               <div class="page">
-                Dashboard
+                Services
               </div>
               <div class="breadcrumb-links">
-                Home / Dashboard
+                Home / Services
               </div>
             </div>
           </div>
