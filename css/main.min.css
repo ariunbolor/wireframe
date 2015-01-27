@@ -1586,6 +1586,7 @@ pre code {
 
 .col-xs-9 {
     width: 75%;
+    margin-bottom: 0px;
 }
 
 .col-xs-8 {
@@ -1609,9 +1610,31 @@ pre code {
 }
 
 .col-xs-3 {
+	background: #efefef;
     width: 25%;
+    padding-left: 0px;
+    border-left: 1px solid #ccc;
+    margin-bottom: 0px;
+}
+.col-xs-3.white {
+	background: #fff;
+}
+.col-xs-3 .nav-tabs {
+	margin-left: 0px;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+.col-xs-3 .nav-tabs li {
+}
+.col-xs-3 .nav-tabs li a {
+	padding: 18px 25px;
+	border-radius: 0px;
+	border-right: 1px solid #ccc;
 }
 
+.col-xs-3 .nav-tabs li.active a {
+	border: 0px;
+}
 .col-xs-2 {
     width: 16.66666667%;
 }
@@ -8573,9 +8596,9 @@ button.close {
 }
 
 .row.header {
-    height: 60px;
+    height: 58px;
     background: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .row.header>div:last-child {
@@ -8748,10 +8771,6 @@ body {
 .row {
     margin-left: 0!important;
     margin-right: 0!important;
-}
-
-.row>div {
-    margin-bottom: 15px;
 }
 
 .alerts-container .alert:last-child {
