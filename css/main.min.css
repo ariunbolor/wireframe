@@ -1651,8 +1651,20 @@ pre code {
 	border: 0px;
 	background: #fff;
 }
-.tab-pane .panel {
+.tab-content {
+	/* overflow-y: auto; */
+}
+#control-bar table {
+	font-size: 11px;
+}
+#control-bar .col-xs-3 .tab-content .tab-pane {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.col-xs-3 .tab-pane .panel {
 	border-radius: 0px;
+	border-right: 0px;
+	border-left: 0px;
 }
 .col-xs-2 {
     width: 16.66666667%;
