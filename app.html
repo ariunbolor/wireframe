@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/main.min.css"/>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <!-- Angular JS main min -->
   <script src="js/main.min.js"></script>
   <!-- CloudSM app -->
@@ -68,100 +70,15 @@
 
     <div id="content-wrapper">
       <div class="page-content">
-
-        <!-- Header Bar -->
-        <div class="row header">
-          <div class="col-xs-9">
-            <div class="user pull-right">
-              <div class="item dropdown">
-                <a href="#" class="dropdown-toggle">
-                  <i class="fa fa-user"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Joe Bloggs
-                  </li>
-                  <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Profile
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Logout
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="item dropdown">
-               <a href="#" class="dropdown-toggle">
-                  <i class="fa fa-shopping-cart"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Notifications
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">Server Down!</a>
-                  </li>
-                </ul>
-              </div>
-	      <div class="item dropdown">
-               <a href="#" class="dropdown-toggle">
-                  <i class="fa fa-group"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Notifications
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">Server Down!</a>
-                  </li>
-                </ul>
-              </div>
-	      <div class="item dropdown">
-               <a href="#" class="dropdown-toggle">
-                  <i class="fa fa-bell-o"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Notifications
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">Server Down!</a>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <div class="meta">
-              <div class="page">
-                Services
-              </div>
-              <div class="breadcrumb-links">
-                Home / Services
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3">
+        <!-- End Header Bar -->
+        <!-- Main Content -->
+        <div class="row full-height">
+        	<div class="col-xs-9">
+        		Content area
+        	</div>
+        	<div class="col-xs-3" id="control-bar">
           	<div role="tabpanel">
-          	<!-- Navytabs -->
-          	<ul class="nav nav-tabs" role="tablist">
+            <ul class="nav nav-tabs" role="tablist">
           	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
           	    <i class="fa fa-cog"></i>
           	    </a></li>
@@ -175,25 +92,19 @@
           	    <i class="fa fa-terminal"></i>
           	    </a></li>
           	</ul>
-
-          	<!-- Tab panes -->
-          	
-          	</div>
-          </div>
-        </div>
-        <!-- End Header Bar -->
-
-        <!-- Main Content -->
-        <div class="row">
-        	<div class="col-xs-9"></div>
-        	<div class="col-xs-3 white">
-          	<div role="tabpanel">
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="home">...</div>
-					<div role="tabpanel" class="tab-pane" id="profile">...</div>
-					<div role="tabpanel" class="tab-pane" id="messages">...</div>
-					<div role="tabpanel" class="tab-pane" id="settings">...</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">
+					<!-- Infotab -->
+					<div class="row">
+					<div class="col-md-6">JW Test Instance <span class="label label-default">instance ID</span><br/><small>Instance type: t2.micro</small><br/><small>Data center: us-east-1b</small></div>
+						<div class="col-md-6"></div>
+					</div>
+					<!-- Infotab -->
 				</div>
+				<div role="tabpanel" class="tab-pane" id="profile">Calendar</div>
+				<div role="tabpanel" class="tab-pane" id="messages">RTS</div>
+				<div role="tabpanel" class="tab-pane" id="settings">...</div>
+			</div>
         	</div>
         	</div>
         </div>

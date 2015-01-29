@@ -2,12 +2,22 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    height: 100%;
 }
-
+#content-wrapper {
+	height: 100%;
+}
+.page-content {
+	height: 100%;
+}
+.full-height {
+    height: 100%;
+}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
     display: block;
 }
@@ -1616,8 +1626,9 @@ pre code {
     border-left: 1px solid #ccc;
     margin-bottom: 0px;
 }
-.col-xs-3.white {
+#control-bar {
 	background: #fff;
+	height: 100%;
 }
 .col-xs-3 .nav-tabs {
 	margin-left: 0px;
@@ -1627,13 +1638,16 @@ pre code {
 .col-xs-3 .nav-tabs li {
 }
 .col-xs-3 .nav-tabs li a {
-	padding: 18px 25px;
+	padding: 10px 16px;
 	border-radius: 0px;
 	border-right: 1px solid #ccc;
+	background: #efefef;
+	color: #333;
 }
 
 .col-xs-3 .nav-tabs li.active a {
 	border: 0px;
+	background: #fff;
 }
 .col-xs-2 {
     width: 16.66666667%;
@@ -8545,7 +8559,7 @@ button.close {
     padding-left: 0;
     margin-left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media only screen and (min-width:561px) {
@@ -8596,7 +8610,7 @@ button.close {
 }
 
 .row.header {
-    height: 58px;
+    height: 40px;
     background: #fff;
     margin-bottom: 0px;
 }
@@ -8848,19 +8862,19 @@ ul.sidebar li a {
 }
 
 ul.sidebar .sidebar-main {
-    height: 65px;
+    height: 40px;
 }
 
 ul.sidebar .sidebar-main a {
     font-size: 18px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 ul.sidebar .sidebar-main .menu-icon {
     float: right;
     font-size: 18px;
     padding-right: 28px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 ul.sidebar .sidebar-title {
