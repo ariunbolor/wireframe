@@ -1625,6 +1625,7 @@ pre code {
     padding-left: 0px;
     border-left: 1px solid #ccc;
     margin-bottom: 0px;
+    padding-right: 0px;
 }
 #control-bar {
 	background: #fff;
@@ -1634,6 +1635,7 @@ pre code {
 	margin-left: 0px;
 	border-bottom: 0px;
 	margin-bottom: 0px;
+	background: #efefef;
 }
 .col-xs-3 .nav-tabs li {
 }
@@ -1648,6 +1650,9 @@ pre code {
 .col-xs-3 .nav-tabs li.active a {
 	border: 0px;
 	background: #fff;
+}
+.tab-pane .panel {
+	border-radius: 0px;
 }
 .col-xs-2 {
     width: 16.66666667%;
