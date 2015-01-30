@@ -88,13 +88,19 @@
           	    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
           	    <i class="fa fa-cogs"></i> 
           	    </a></li>
-          	    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+          	    <li class="pull-right" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
           	    <i class="fa fa-terminal"></i>
           	    </a></li>
           	</ul>
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home">
 					<!-- Infotab -->
+				<div class="row">
+				<div class="col-md-12">
+					<h5>General info</h5>
+				</div>
+				</div>
+
 					<div class="row">
 					<div class="col-md-6">JW Test Instance <span class="label label-default">instance ID</span><br/><small>Instance type: t2.micro</small><br/><small>Data center: us-east-1b</small></div>
 					<div class="col-md-6">RUNNING<br/><small>2014-12-16 T 08:31:33.000Z</small><br/>Region: us-east-1</div>
@@ -204,6 +210,7 @@
 					      		<div class="row no-padding">
 					      			<div class="col-md-12">
 					      				<strong>Parking calendar name</strong>
+					      				<a href="" class="pull-right"><i class="fa fa-remove"></i></a></a>
 					      			</div>
 					      		</div>
 					      		</td>
@@ -233,7 +240,7 @@
 					<h5>Manage scheduled run time</h5>
 				</div>
 				</div>
-				
+				<!-- If there is no SRT assigned
 				<div class="row">
 					<div class="col-md-12">
 					      <table class="table table-bordered">
@@ -247,20 +254,37 @@
 					      </table>
 					</div>
 				</div>
-
+				-->
 				<div class="row">
 					<div class="col-md-12">
-						
-					<div>
+					      <table class="table table-bordered">
+					      	<tr>
+					      		<td>Assigned SRT</td>
+					      		<td class="action"><a href="" class="btn btn-warning btn-xs"><i class="fa fa-exchange"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		<strong>Scheduled Run Time  Name</strong>
+					      				<a href="" class="pull-right"><i class="fa fa-remove"></i></a></a>
+					      		</td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+								<div class="row">
+									<div class="col-md-6">
+										4 hours
+									</div>
+									<div class="col-md-6">
+										<span class="label label-warning">Terminate</span>
+									</div>
+								</div>
+								</td>
+					      	</tr>
+					      </table>
+					</div>
 				</div>
 
-				<div class="row">
-				<div class="col-md-12">
-					<h5>Manage cron jobs</h5>
-				</div>
-				</div>
-
-				</div>
+				</div><!-- tab pane -->
 				<div role="tabpanel" class="tab-pane" id="messages">RTS</div>
 				<div role="tabpanel" class="tab-pane" id="settings">...</div>
 			</div>
