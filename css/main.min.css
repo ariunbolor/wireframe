@@ -158,7 +158,15 @@ table {
 td,th {
     padding: 0;
 }
-
+td.action {
+	width: 30px;
+}
+td .row.no-padding .col-md-12 {
+	padding: 0px;
+}
+td .row.no-padding .col-md-6 {
+	padding: 0px;
+}
 @media print {
     * {
         color: #000!important;
