@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" ng-app="CloudSM">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cloudSM Dashboard</title>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/main.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- Angular JS main min -->
+  <script src="js/main.min.js"></script>
+  <!-- CloudSM app -->
+  <script src="js/dashboard.min.js"></script>
+  <!-- Custom Scripts -->
+</head>
+<body>
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#info" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i></a></li>
+      <li role="presentation"><a href="#jobs" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-calendar"></i></a></li>
+      <li role="presentation"><a href="#other" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
+    <li role="presentation" class="pull-right"><a href="#console" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" style="background: #fff">
+    <div role="tabpanel" class="tab-pane active" id="info">
+        <div class="row">
+            <div class="col-md-3">
+                Logo 
+            </div>
+            <div class="col-md-9">
+                <div class="row">Instance name - STATUS</div>
+                <div class="row">Created datel</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                  <table class="table table-bordered">
+                    <tr>
+                        <td colspan="2">Assigned project</td>
+                    </tr>
+                    <tr class="well">
+                        <td>The Project Name </td>
+                        <td class="action"><a href="" class="btn btn-info btn-xs"><i class="fa fa-exchange"></i></a></td>
+                    </tr>
+                    <!-- if change project has choosen -->
+                    <tr>
+                        <td colspan="2">
+                            <select>
+                                <option>Project A</option>
+                                <option>Project B</option>
+                                <option>Project C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- if change project has choosen -->
+                    <tr class="well">
+                        <td colspan="2">
+                            <a href="" class="btn btn-warning btn-xs pull-right">Save changes</a>
+                        </td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="col-sm-6">
+                  <table class="table table-bordered">
+                    <tr>
+                        <td colspan="2">Assigned Group</td>
+                    </tr>
+                    <tr class="well">
+                        <td>The Group Name </td>
+                        <td class="action"><a href="" class="btn btn-info btn-xs"><i class="fa fa-exchange"></i></a></td>
+                    </tr>
+                    <!-- if change project has choosen -->
+                    <tr>
+                        <td colspan="2">
+                            <select>
+                                <option>Group A</option>
+                                <option>Group B</option>
+                                <option>Group C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- if change project has choosen -->
+                    <tr class="well">
+                        <td colspan="2">
+                            <a href="" class="btn btn-warning btn-xs pull-right">Save changes</a>
+                        </td>
+                    </tr>
+                  </table>
+		    </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+            Root volume (/dev/sda1)
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                    <span class="sr-only">40% Complete (success)</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="row">
+                <div class="col-xs-12">
+                <div class="panel panel-default">
+                <div class="panel-heading">Attached devices</div>
+                    <div class="panel-body">
+                        <div class="col-xs-10" style="padding: 0px; font-size: 11px; color:#333">
+                            Attached device #1
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-2" style="padding: 0px;"><br>
+                            <i class="fa fa-remove pull-right"></i>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="" class="btn btn-primary btn-xs">+ new device</a>
+                        <a href="" class="btn btn-primary btn-xs">+ existing device</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <!------------------------------------- Info tab ------------------------------------------------------------>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="jobs">
+        <!------------------------------- Scheduled events tab ------------------------------------------------------->
+    <div class="row">
+				<div class="col-md-12">
+					<h5>Manage parking calendar</h5>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					      <table class="table table-bordered">
+					      	<tr>
+                                <td>Parking calendar</td>
+					      		<td class="action"><a href="" class="btn btn-warning btn-xs"><i class="fa fa-plus"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">There is no parking calendar assigned yet </td>
+					      	</tr>
+					      </table>
+					</div>
+					<div class="col-md-12">
+					      <table class="table table-bordered">
+					      	<tr>
+					      		<td>Parking calendar</td>
+					      		<td class="action"><a href="" class="btn btn-warning btn-xs"><i class="fa fa-plus"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		<select>
+					      			<option>Parking calendar A</option>
+					      			<option>Parking Calendar B</option>
+					      			<option>Parking calendar C</option>
+					      			<option>Parking calendar D</option>
+					      			<option>Parking calendar E</option>
+					      		</select>
+					      		</td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2"><a href="" class="btn btn-primary btn-xs">save</a></td>
+					      	</tr>
+					      </table>
+					</div>
+
+					<div class="col-md-12">
+					      <table class="table table-bordered">
+					      	<tr>
+					      		<td>Assigned parking calendar</td>
+					      		<td class="action"><a href="" class="btn btn-success btn-xs"><i class="fa fa-exchange"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		<div class="row no-padding">
+					      			<div class="col-md-12">
+					      				<strong>Parking calendar name</strong>
+					      				<a href="" class="pull-right"><i class="fa fa-remove"></i></a></a>
+					      			</div>
+					      		</div>
+					      		</td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		<div class="row no-padding">
+					      			<div class="col-md-6">
+					      				Total hours:<br/><h1>40</h1>
+					      			</div>
+					      			<div class="col-md-6">
+					      				Total cost:<br/><h1>$50</h1>
+					      			</div>
+					      		</div>
+					      		</td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		Show graphc here
+					      		</td>
+					      	</tr>
+					      </table>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-md-12">
+					<h5>Manage scheduled run time</h5>
+				</div>
+				</div>
+				<!-- If there is no SRT assigned
+				<div class="row">
+					<div class="col-md-12">
+					      <table class="table table-bordered">
+					      	<tr>
+					      		<td>Scheduled run time</td>
+					      		<td class="action"><a href="" class="btn btn-warning btn-xs"><i class="fa fa-plus"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">There is no sechduled run time assigned yet </td>
+					      	</tr>
+					      </table>
+					</div>
+				</div>
+				-->
+				<div class="row">
+					<div class="col-md-12">
+					      <table class="table table-bordered">
+					      	<tr>
+					      		<td>Assigned SRT</td>
+					      		<td class="action"><a href="" class="btn btn-warning btn-xs"><i class="fa fa-exchange"></i></a></td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+					      		<strong>Scheduled Run Time  Name</strong>
+					      				<a href="" class="pull-right"><i class="fa fa-remove"></i></a></a>
+					      		</td>
+					      	</tr>
+					      	<tr class="well">
+					      		<td colspan="2">
+								<div class="row">
+									<div class="col-md-6">
+										4 hours
+									</div>
+									<div class="col-md-6">
+										<span class="label label-warning">Terminate</span>
+									</div>
+								</div>
+								</td>
+					      	</tr>
+					      </table>
+					</div>
+				</div>
+        <!------------------------------- Scheduled events tab ------------------------------------------------------->
+    </div>
+    <div role="tabpanel" class="tab-pane" id="other">...</div>
+    <div role="tabpanel" class="tab-pane" id="console">...</div>
+  </div>
+
+</div>
+
+</body>
+</html>
